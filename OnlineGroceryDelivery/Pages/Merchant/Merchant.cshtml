@@ -1,0 +1,17 @@
+@page 
+@model Deliverycart.WebApp.Pages.InventoryModel
+@{
+    ViewData["Title"] = "Update Inventory";
+}
+
+<h1>Update Inventory</h1>
+
+<form method="post">
+<div>Item Name: <input type="text" asp-for="items.item_name"/> </div>
+<div>Price: <input type="text" asp-for="items.price" /> </div>
+<div>Description: <input type="text" asp-for="items.description" /> </div>
+<div>Stock: <input type="text" asp-for="items.stock"/> </div>
+<div> <button type="submit">Submit</div>
+</form>
+
+
